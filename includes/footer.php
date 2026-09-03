@@ -1,5 +1,3 @@
-<footer>
-   <p>&#169; My Website. All rights reserved.</p>
-</footer>
+</main>
 </body>
 </html>
