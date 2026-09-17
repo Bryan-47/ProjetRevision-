@@ -33,3 +33,21 @@ ProjetRevision-/
 
 ## Journal de bord
 
+###27/08/2026
+
+J'ai créer les requetes sql pour les pages classe, cours, creneaux.
+J'ai créer le diagramme de Gantt.
+J'ai créer la db.
+
+###03/09/2026
+
+J'ai commencé la création des formulaires.
+J'ai créer les pages de classes et creneaux ainsi que la page de cours.
+
+###17/09/2026
+J'ai créer la page principal.
+Fini les formulaires.
+Fini la stylisation.
+Creation des test CRUD avec Bruno.
+(Avancement à la maison le jeudi 10/09/2026)
+
