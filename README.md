@@ -52,6 +52,11 @@ Creation des test CRUD avec Bruno.
 (Avancement à la maison le jeudi 10/09/2026)
 
 
+
+###Dificulté rencontré
+Je n'ai pas vraiment eu de dificulté, mais le manque de pratique, j'ai eu des oubli de comment faire une api de 0. Sinon tout c'est bien passé.
+
+
 ### Pourquoi cette methodologie 
 En séparant les taches à faire que cette manière, cela nous permet de mieux nous organiser et de pas nous perdre de quoi faire. 
 La separation des commits nous aide beaucoup, si nous voudrions revenir a un version ulterieur, nous saurons exactement ce que nous avion modifier.
