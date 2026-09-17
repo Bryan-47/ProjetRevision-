@@ -1,0 +1,27 @@
+meta {
+  name: Modifier un cours
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/api/index.php
+  body: json
+  auth: none
+}
+
+params:query {
+  resource: cours
+  id: 1
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "code": "AWEB3",
+    "nom": "Atelier Web 3e année S1"
+  }
+}

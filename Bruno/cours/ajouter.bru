@@ -1,0 +1,26 @@
+meta {
+  name: Ajouter un cours
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/index.php
+  body: json
+  auth: none
+}
+
+params:query {
+  resource: cours
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "code": "ARES3",
+    "nom": "Réseaux 3e année S1"
+  }
+}

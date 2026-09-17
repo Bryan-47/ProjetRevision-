@@ -1,0 +1,27 @@
+meta {
+  name: Modifier une classe
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/index.php
+  body: json
+  auth: none
+}
+
+params:query {
+  resource: classes
+  id: 1
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "nom": "I.DA-P3A",
+    "annee_scolaire": "2026-2027"
+  }
+}

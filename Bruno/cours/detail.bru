@@ -1,0 +1,16 @@
+meta {
+  name: Détail d'un cours
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/index.php
+  body: none
+  auth: none
+}
+
+params:query {
+  resource: cours
+  id: 1
+}

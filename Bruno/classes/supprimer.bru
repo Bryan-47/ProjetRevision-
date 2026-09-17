@@ -1,0 +1,16 @@
+meta {
+  name: Supprimer une classe
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/api/index.php
+  body: none
+  auth: none
+}
+
+params:query {
+  resource: classes
+  id: 1
+}

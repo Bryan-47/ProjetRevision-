@@ -1,0 +1,30 @@
+meta {
+  name: Ajouter un créneau
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/index.php
+  body: json
+  auth: none
+}
+
+params:query {
+  resource: creneaux
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "classe_id": 1,
+    "cours_id": 1,
+    "jour": "vendredi",
+    "heure_debut": "08:05",
+    "heure_fin": "11:40",
+    "salle": "R104"
+  }
+}

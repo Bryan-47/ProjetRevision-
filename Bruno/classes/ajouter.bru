@@ -1,0 +1,26 @@
+meta {
+  name: Ajouter une classe
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/index.php
+  body: json
+  auth: none
+}
+
+params:query {
+  resource: classes
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "nom": "I.DA-P2A",
+    "annee_scolaire": "2027-2028"
+  }
+}

@@ -1,27 +1,32 @@
-<?php 
+<?php
 
 require_once __DIR__ . '/../config/database.php';
 
-?>
+$projectRoot = realpath(__DIR__ . '/..');
+$pageDir = dirname($_SERVER['SCRIPT_FILENAME']);
+$prefix = '';
+while (realpath($pageDir) !== $projectRoot) {
+    $prefix .= '../';
+    $pageDir = dirname($pageDir);
+}
 
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <title>Horaire des Eleves - CFPT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horaire Élèves - CFPT</title>
+    <link rel="stylesheet" href="<?= $prefix ?>css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Horaire Élèves - CFPT</h1>
-    </header>
     <nav>
-        <a href="../index.php">Accueil</a>
-        <a href="../pages/classes.php">Classes</a>
-        <a href="../pages/cours.php">Cours</a>
-        <a href="../pages/horaire.php">Horaires</a>
+        <a href="<?= $prefix ?>index.php">Accueil</a>
+        <a href="<?= $prefix ?>pages/classes.php">Classes</a>
+        <a href="<?= $prefix ?>pages/cours.php">Cours</a>
+        <a href="<?= $prefix ?>pages/horaire.php">Horaires</a>
     </nav>
-    <main>
+    <main class="container">

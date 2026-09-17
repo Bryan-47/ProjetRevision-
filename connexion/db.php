@@ -1,7 +1,6 @@
 <?php declare(strict_types=1);
 
 require_once __DIR__ . '/../config/database.php';
-require_once __DIR__ . '/../utils/utils.php';
 
 function getDb() : PDO {
     static $db = NULL;
@@ -21,6 +20,6 @@ function createConnection($dbname, $username, $passwd) {
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ));
     } catch (PDOException $e) {
-        jsonResponse([KEY_MESSAGE => $e->getMessage()], 500);
+        json_encode(["error"]);
     }
 }

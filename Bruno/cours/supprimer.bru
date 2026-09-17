@@ -1,0 +1,16 @@
+meta {
+  name: Supprimer un cours
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/api/index.php
+  body: none
+  auth: none
+}
+
+params:query {
+  resource: cours
+  id: 1
+}

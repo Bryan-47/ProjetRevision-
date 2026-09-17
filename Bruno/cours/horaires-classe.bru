@@ -1,0 +1,16 @@
+meta {
+  name: Horaires d'une classe
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/index.php
+  body: none
+  auth: none
+}
+
+params:query {
+  resource: cours
+  classe: I.DA-P3A
+}
