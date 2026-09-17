@@ -51,3 +51,7 @@ Fini la stylisation.
 Creation des test CRUD avec Bruno.
 (Avancement à la maison le jeudi 10/09/2026)
 
+
+### Pourquoi cette methodologie 
+En séparant les taches à faire que cette manière, cela nous permet de mieux nous organiser et de pas nous perdre de quoi faire. 
+La separation des commits nous aide beaucoup, si nous voudrions revenir a un version ulterieur, nous saurons exactement ce que nous avion modifier.
