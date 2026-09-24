@@ -1,6 +1,8 @@
 # Horaire des classes du CFPT
 Nom : Torres | Prénom : Bryan
 
+URL projet : https://github.com/Bryan-47/ProjetRevision-.git
+
 Application PHP de gestion des horaires des élèves.
 
 ## Installation
