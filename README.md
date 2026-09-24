@@ -1,10 +1,28 @@
 # Horaire des classes du CFPT
+Nom : Torres | Prénom : Bryan
 
-Application web PHP  permettant la gestion des classes, des cours et des horaires (créneaux) au CFPT.
+Application PHP de gestion des horaires des élèves.
 
-## Auteur
+## Installation
 
-Henrique Torres Bryan
+### 1. Importer la base : mysql -u root -p < sql/init.sql
+### 2. Adapter les identifiants dans config/database.php
+### 3. Copier le dossier dans le serveur web.
+
+## Lancer / tester
+
+### Ouvrir dans le navigateur :
+### - Accueil : /index.php
+### - Classes : /pages/classes.php
+### - Cours : /pages/cours.php
+### - Horaires : pages/horaire.php
+
+### Tester l'API (curl ou Bruno) :
+
+### /api/index.php?resource=classes
+### /api/index.php?resource=cours
+### /api/index.php?resource=creneaux
+### /api/index.php?resource=cours&classe=I.DA-P3A
 
 ## Structure du projet
 
@@ -29,7 +47,6 @@ ProjetRevision-/
 │   ├── index.php             # Point d'entrée API
 └── sql/
     └── init.sql              # Création de la base + données d'exemple
-
 
 ## Journal de bord
 
